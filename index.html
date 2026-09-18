@@ -178,7 +178,11 @@
   }
   .download span { font-weight: 500; opacity: 0.85; font-variant-numeric: tabular-nums; }
   .get { display: grid; gap: 8px; justify-items: center; }
-  .address { font-size: 0.78rem; color: var(--ink-2); word-break: break-all; max-width: 34ch; text-align: center; }
+  .address {
+    font-size: 0.78rem; color: var(--ink-2); word-break: break-all; max-width: 34ch;
+    text-align: center; text-decoration: none;
+  }
+  .address:hover { color: var(--teal); text-decoration: underline; }
   .download:hover { background: var(--teal-deep); }
 
   /* Study plan */
@@ -316,7 +320,8 @@
       </div>
       <div class="get">
         <a class="download" href="https://oluyemi-1.github.io/nclex-prep-guide/nclex-prep-guide.mp4" download>Download the film <span>33 MB</span></a>
-        <p class="address">https://oluyemi-1.github.io/nclex-prep-guide/nclex-prep-guide.mp4</p>
+        <!-- Some viewers block a download link, so the plain address is a link too. -->
+        <a class="address" href="https://oluyemi-1.github.io/nclex-prep-guide/nclex-prep-guide.mp4" target="_blank" rel="noopener">https://oluyemi-1.github.io/nclex-prep-guide/nclex-prep-guide.mp4</a>
       </div>
     </div>
   </section>
