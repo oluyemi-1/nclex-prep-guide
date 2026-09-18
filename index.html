@@ -164,6 +164,23 @@
   .steps li.now .say { display: block; }
   .hint { font-size: 0.9rem; color: var(--ink-2); }
 
+  /* Offline copy */
+  .offline {
+    margin-top: 28px; padding: 22px 24px; border-radius: 18px; background: var(--tint);
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .offline h3 { margin-bottom: 4px; }
+  .offline p { color: var(--ink-2); font-size: 0.97rem; max-width: 60ch; }
+  .download {
+    display: inline-flex; align-items: baseline; gap: 8px; white-space: nowrap;
+    background: var(--teal); color: var(--on-teal); text-decoration: none;
+    font-weight: 700; padding: 12px 20px; border-radius: 999px;
+  }
+  .download span { font-weight: 500; opacity: 0.85; font-variant-numeric: tabular-nums; }
+  .get { display: grid; gap: 8px; justify-items: center; }
+  .address { font-size: 0.78rem; color: var(--ink-2); word-break: break-all; max-width: 34ch; text-align: center; }
+  .download:hover { background: var(--teal-deep); }
+
   /* Study plan */
   .plan { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; counter-reset: phase; }
   .phase {
@@ -290,6 +307,16 @@
         <p class="meta" id="tut-meta"></p>
         <ol class="steps" id="steps"></ol>
         <p class="hint">Captions are available from the video's controls. The progress numbers in these videos come from a sample study history.</p>
+      </div>
+    </div>
+    <div class="offline">
+      <div>
+        <h3>Keep the whole guide offline</h3>
+        <p>All ten tutorials as one film, 14 minutes, with a chapter marker for each one. Save it to a phone or laptop and watch without a connection.</p>
+      </div>
+      <div class="get">
+        <a class="download" href="https://oluyemi-1.github.io/nclex-prep-guide/nclex-prep-guide.mp4" download>Download the film <span>33 MB</span></a>
+        <p class="address">https://oluyemi-1.github.io/nclex-prep-guide/nclex-prep-guide.mp4</p>
       </div>
     </div>
   </section>
